@@ -89,50 +89,17 @@ def prune():
          print(" raw has been removed successfully" % dir)
     except:
          print("Empty raw")
+         
 # uncomment this if it's the first time you run the code, to generate the key
 #write_key()
-print("Enter password")
-password=input()
-if(password=="6969"):
-        print("Enter 1 to encrypt")
-        print("Enter 2 to decrypt")
-        print("Enter 3 to delete raw")
-        print("Enter 0 to exit")
-        a=int(input("Enter value"))
-        if(a==1):
-            compress()
-        elif(a==2):
-            decompress()
-        elif(a==3):
-            prune()
-        elif(a==0):
-            print("Exited")
-            exit()
-        else:
-            print("Option not available")
-        while(a!=0):
-            print("Enter 1 to encrypt")
-            print("Enter 2 to decrypt")
-            print("Enter 3 to delete raw")
-            print("Enter 0 to exit")
-            a=int(input("Enter value"))
-            if(a==1):
-                compress()
-            elif(a==2):
-                decompress()
-            elif(a==3):
-                prune()
-            elif(a==0):
-                print("Exited")
-                exit()
-            else:
-                print("Option not available")
-    
-    
+def password(passwd):
+        
+        password=passwd
+        if(password=="6969"):
+            return True
+            
+               
+                
 
-
-    
-else:
-    exit()
-
-
+def hello():
+    pass
